@@ -16,6 +16,7 @@ public class ActivityTransition extends AppCompatActivity {
         setContentView(R.layout.activity_activity_transition);
         sharedImage = (ImageView) findViewById(R.id.sharedimage);
         // This is the first official change in code
+        //Re-doing it
     }
 
     public void onClick(View view)
