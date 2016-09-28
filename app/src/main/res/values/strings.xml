@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">jAvengers</string>
+    <string name="ask_name">Enter your name</string>
+    <string name="title_activity_options_menu">OptionsMenu</string>
+    <string name="menu_settings">Settings</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="home">Home</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_bangalore_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1775518022686294</string>
+
+
+</resources>

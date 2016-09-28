@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorOrange"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.felight.javengers.BenchMarkActivity"
+    android:id="@+id/mainLinearLayout">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etArraySize"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter array size"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AverageCase"
+                android:onClick="onRadioButtonSelected"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/rb1"
+                android:layout_gravity="center_horizontal|left"
+                android:checked="true"
+                android:textSize="@dimen/textSize"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BestCase"
+                android:onClick="onRadioButtonSelected"
+                android:id="@+id/rb2"
+                android:layout_gravity="center_horizontal|left"
+                android:textColor="@color/colorWhite"
+                android:checked="false"
+                android:textSize="@dimen/textSize"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WorstCase"
+                android:textColor="@color/colorGreen"
+                android:onClick="onRadioButtonSelected"
+                android:id="@+id/rb3"
+                android:layout_gravity="center_horizontal|left"
+                android:checked="false"
+                android:textSize="@dimen/textSize"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Array"
+        android:onClick="generateArray"
+        android:id="@+id/btGenerate"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="13"
+        android:columnCount="31"
+        android:visibility="invisible"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sorting Algo."
+            android:id="@+id/tvSorting"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time"
+            android:id="@+id/tvTime"
+            android:layout_row="2"
+            android:layout_column="30" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Bubble Sort"
+            android:onClick="bubbleSort"
+            android:id="@+id/bt1"
+            android:layout_row="6"
+            android:layout_column="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0000"
+            android:id="@+id/tvTime1"
+            android:layout_row="6"
+            android:layout_column="30" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Selection Sort"
+            android:onClick="selectionSort"
+            android:id="@+id/bt2"
+            android:layout_row="7"
+            android:layout_column="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0000"
+            android:id="@+id/tvTime2"
+            android:layout_row="7"
+            android:layout_column="30" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Merge Sort"
+            android:onClick="mergeSort"
+            android:id="@+id/button3"
+            android:layout_row="8"
+            android:layout_column="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0000"
+            android:id="@+id/tvTime3"
+            android:layout_row="8"
+            android:layout_column="30" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Insertion Sort"
+            android:onClick="insertionSort"
+            android:id="@+id/bt4"
+            android:layout_row="9"
+            android:layout_column="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0000"
+            android:id="@+id/tvTime4"
+            android:layout_row="9"
+            android:layout_column="30" />
+
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bench Mark"
+        android:visibility="invisible"
+        android:onClick="benchMark"
+        android:id="@+id/btBenchMark"
+        android:layout_row="12"
+        android:layout_column="1" />
+
+
+</LinearLayout>
