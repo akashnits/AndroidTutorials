@@ -94,10 +94,15 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+             />
         <activity
             android:name=".BangaloreMapsActivity"
             android:label="@string/title_activity_bangalore_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".SQLiteDemo">
         </activity>
@@ -118,11 +123,7 @@
         <activity android:name=".UsingVolleyLib">
         </activity>
         <activity android:name=".FBActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
